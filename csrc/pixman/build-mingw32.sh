@@ -1,5 +1,5 @@
 gcc \
-	-shared -o ../../bin/pixman.dll -Wall -O3 -s -I. \
+	-shared -static-libgcc -o ../../bin/pixman.dll -Wall -O3 -s -I. \
 	-mmmx -msse2 -mfpmath=sse -DUSE_X86_MMX -DUSE_SSE2 \
 	-DPACKAGE=pixman \
 	\
