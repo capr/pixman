@@ -1,5 +1,5 @@
 gcc \
-	-shared -o ../../linux/bin/libpixman.so -Wall -O3 -s -I. \
+	-shared -o ../../bin/linux32/libpixman.so -Wall -O3 -s -I. \
 	-mmmx -msse2 -mfpmath=sse -DUSE_X86_MMX -DUSE_SSE2 \
 	-DPACKAGE=pixman \
 	-DTLS="__thread" \
