@@ -1,5 +1,5 @@
-gcc \
-	-shared -static-libgcc -o ../../bin/mingw32/pixman.dll -Wall -O3 -s -I. \
+gcc $CFLAGS \
+	-shared -o ../../bin/mingw32/pixman.dll -Wall -I. \
 	-mmmx -msse2 -mfpmath=sse -DUSE_X86_MMX -DUSE_SSE2 \
 	-DPACKAGE=pixman \
 	\
