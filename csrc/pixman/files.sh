@@ -1,6 +1,6 @@
 touch config.h
 
-echo "\
+echo "
 pixman.c
 pixman-access.c
 pixman-access-accessors.c
@@ -30,9 +30,17 @@ pixman-region32.c
 pixman-solid-fill.c
 pixman-timer.c
 pixman-trap.c
-pixman-utils.c"
+pixman-utils.c
+"
 
-echo "\
+echo "
 pixman-mmx.c
 pixman-sse2.c
-pixman-ssse3.c"
+pixman-ssse3.c
+-mmmx -msse2 -mssse3 -mfpmath=sse
+-DUSE_X86_MMX
+-DUSE_SSE2
+-DUSE_SSSE3
+-DUSE_GCC_INLINE_ASM
+-DPACKAGE=pixman
+"
