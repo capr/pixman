@@ -1,5 +1,4 @@
 ---
-project: pixman
 tagline: pixel manipulation
 ---
 
